@@ -1,3 +1,5 @@
+using Argon;
+
 namespace VerifyTests;
 
 public static class VerifyOpenTelemetry
@@ -24,19 +26,16 @@ public static class VerifyOpenTelemetry
             ActivityStopped = activity => Recording.TryAdd("activity", activity)
         };
 
-        var activityConverter = new ActivityConverter();
-        var activityEventConverter = new ActivityEventConverter();
-        var activityLinkConverter = new ActivityLinkConverter();
-        var activityContextConverter = new ActivityContextConverter();
-        var logRecordConverter = new LogRecordConverter();
+        JsonConverter[] converters = [
+            new ActivityConverter(),
+            new ActivityEventConverter(),
+            new ActivityLinkConverter(),
+            new ActivityContextConverter(),
+            new LogRecordConverter()
+        ];
 
         ActivitySource.AddActivityListener(listener);
         VerifierSettings.AddExtraSettings(_ =>
-            _.Converters.AddRange(
-                activityConverter,
-                activityEventConverter,
-                activityLinkConverter,
-                activityContextConverter,
-                logRecordConverter));
+            _.Converters.AddRange(converters));
     }
 }
