@@ -24,15 +24,19 @@ public static class VerifyOpenTelemetry
             ActivityStopped = activity => Recording.TryAdd("activity", activity)
         };
 
+        var activityConverter = new ActivityConverter();
+        var activityEventConverter = new ActivityEventConverter();
+        var activityLinkConverter = new ActivityLinkConverter();
+        var activityContextConverter = new ActivityContextConverter();
+        var logRecordConverter = new LogRecordConverter();
+
         ActivitySource.AddActivityListener(listener);
-        VerifierSettings.AddExtraSettings(settings =>
-        {
-            var converters = settings.Converters;
-            converters.Add(new ActivityConverter());
-            converters.Add(new ActivityEventConverter());
-            converters.Add(new ActivityLinkConverter());
-            converters.Add(new ActivityContextConverter());
-            converters.Add(new LogRecordConverter());
-        });
+        VerifierSettings.AddExtraSettings(_ =>
+            _.Converters.AddRange(
+                activityConverter,
+                activityEventConverter,
+                activityLinkConverter,
+                activityContextConverter,
+                logRecordConverter));
     }
 }
