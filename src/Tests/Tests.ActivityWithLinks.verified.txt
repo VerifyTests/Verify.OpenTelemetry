@@ -1,0 +1,15 @@
+{
+  target: result,
+  activity: {
+    OperationWithLinks: {
+      Links: [
+        {
+          Context: {
+            TraceFlags: Recorded,
+            IsRemote: false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    CategoryName: TestCategory,
+    LogLevel: Error,
+    Body: Operation failed,
+    Exception: {
+      Type: Exception,
+      Message: test error
+    },
+    Attributes: {
+      {OriginalFormat}: Operation failed
+    }
+  }
+]

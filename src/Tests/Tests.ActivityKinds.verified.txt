@@ -1,0 +1,11 @@
+{
+  target: result,
+  activity: {
+    ServerOperation: {
+      Kind: Server,
+      Tags: {
+        http.method: GET
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  target: result,
+  activity: {
+    OperationWithEvents: {
+      Events: [
+        {
+          Name: EventOne
+        },
+        {
+          Name: EventTwo,
+          Tags: {
+            eventKey: eventValue
+          }
+        }
+      ]
+    }
+  }
+}

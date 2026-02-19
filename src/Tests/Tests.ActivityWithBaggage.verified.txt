@@ -1,0 +1,11 @@
+{
+  target: result,
+  activity: {
+    OperationWithBaggage: {
+      Baggage: {
+        baggage1: value1,
+        baggage2: value2
+      }
+    }
+  }
+}

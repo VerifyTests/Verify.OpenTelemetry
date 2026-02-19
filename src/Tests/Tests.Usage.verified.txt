@@ -1,0 +1,11 @@
+{
+  target: result,
+  activity: {
+    MyOperation: {
+      Tags: {
+        key1: value1,
+        key2: 42
+      }
+    }
+  }
+}

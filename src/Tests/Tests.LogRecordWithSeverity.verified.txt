@@ -1,0 +1,10 @@
+[
+  {
+    CategoryName: TestCategory,
+    LogLevel: Error,
+    Body: Something failed,
+    Attributes: {
+      {OriginalFormat}: Something failed
+    }
+  }
+]

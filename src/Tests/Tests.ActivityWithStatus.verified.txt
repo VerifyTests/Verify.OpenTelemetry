@@ -1,0 +1,9 @@
+{
+  target: result,
+  activity: {
+    OperationWithStatus: {
+      Status: Error,
+      StatusDescription: Something went wrong
+    }
+  }
+}

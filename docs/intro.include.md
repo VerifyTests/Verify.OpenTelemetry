@@ -1,0 +1,1 @@
+Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [OpenTelemetry](https://www.nuget.org/packages/OpenTelemetry) types including [System.Diagnostics.Activity](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.activity) and [LogRecord](https://github.com/open-telemetry/opentelemetry-dotnet)
