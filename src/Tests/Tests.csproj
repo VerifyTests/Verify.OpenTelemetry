@@ -7,7 +7,7 @@
   <ItemGroup>
     <PackageReference Include="MarkdownSnippets.MsBuild" PrivateAssets="all" />
     <PackageReference Include="xunit.v3" />
-    <PackageReference Include="Verify.XunitV3" VersionOverride="33.0.0-beta.3" />
+    <PackageReference Include="Verify.XunitV3" VersionOverride="33.0.0-beta.4" />
     <PackageReference Include="OpenTelemetry" />
     <PackageReference Include="OpenTelemetry.Exporter.InMemory" />
     <PackageReference Include="Microsoft.Extensions.Logging" />
@@ -15,7 +15,7 @@
     <PackageReference Include="DiffEngine" />
     <PackageReference Include="EmptyFiles" />
     <PackageReference Include="SimpleInfoName" />
-    <PackageReference Include="Verify" VersionOverride="33.0.0-beta.3" />
+    <PackageReference Include="Verify" VersionOverride="33.0.0-beta.4" />
     <PackageReference Include="Verify.DiffPlex" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <ProjectReference Include="..\Verify.OpenTelemetry\Verify.OpenTelemetry.csproj" />
