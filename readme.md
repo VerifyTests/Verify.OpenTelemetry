@@ -1,7 +1,7 @@
 # <img src="/src/icon.png" height="30px"> Verify.OpenTelemetry
 
 [![Discussions](https://img.shields.io/badge/Verify-Discussions-yellow?svg=true&label=)](https://github.com/orgs/VerifyTests/discussions)
-[![Build status](https://img.shields.io/appveyor/build/SimonCropp/verify-opentelemetry)](https://ci.appveyor.com/project/SimonCropp/verify-opentelemetry)
+[![Build status](https://github.com/VerifyTests/Verify.OpenTelemetry/actions/workflows/build.yml/badge.svg)](https://github.com/VerifyTests/Verify.OpenTelemetry/actions/workflows/build.yml)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.OpenTelemetry.svg)](https://www.nuget.org/packages/Verify.OpenTelemetry/)
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [OpenTelemetry](https://www.nuget.org/packages/OpenTelemetry) types including [System.Diagnostics.Activity](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.activity) and [LogRecord](https://github.com/open-telemetry/opentelemetry-dotnet)<!-- singleLineInclude: intro. path: /docs/intro.include.md -->
