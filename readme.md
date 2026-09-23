@@ -128,8 +128,8 @@ Results in:
     LogLevel: Information,
     Body: Hello {Name},
     Attributes: {
-      {OriginalFormat}: Hello {Name},
-      Name: World
+      Name: World,
+      {OriginalFormat}: Hello {Name}
     }
   }
 ]
